@@ -13,7 +13,8 @@ export const Navbar = (props) => {
         () => [
             { name: 'Home', href: '/' },
             { name: 'About Me', href: '/about' },
-            { name: 'Qualification', href: '/qualification' }
+            { name: 'Qualification', href: '/qualification' },
+            { name: 'Project', href: '/project' }
         ],
         []
     )

@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Home() {
     return (
-        <section className="bg-cover bg-center h-screen bg-gray-800 flex items-center ">
-            <div className="container item-center text-white lg:grid-cols-[1fr_300px] gap-12 px-4 lg:px-6">
+        <section className="bg-cover bg-center h-screen bg-gray-800 flex items-center">
+            <div className="container grid grid-cols-1 lg:grid-cols-[1fr,300px] gap-12 px-4 lg:px-6">
                 <div className="text-white mb-10">
                     <div>
                         <h1 className="text-4xl font-bold ">
@@ -21,6 +22,7 @@ export default function Home() {
                             from Aurora{' '}
                         </p>
                     </div>
+
                     <div className="flex justify-left">
                         <a
                             href="https://web.facebook.com/martangelo.martinez.1/"
