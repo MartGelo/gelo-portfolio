@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import { Badge } from '@/components/ui/badge'
 
 export default function About() {
     return (
-        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 h-screen border-gray-800 dark:border-gray-800">
+        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 md:h-screen border-gray-800 dark:border-gray-800">
             <div className="container grid item-center text-white lg:grid-cols-[1fr_300px] gap-12 px-4 lg:px-6">
-                <div className="space-y-4 lg:space-y-3 xl:space-y-5">
+                <div className="space-y-6 lg:space-y-3 xl:space-y-5">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">
                             About Me
@@ -13,7 +14,7 @@ export default function About() {
                             Introduction to who I am
                         </p>
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-6">
                         <div className="flex flex-col gap-1 min-h-[100px]">
                             <div className="flex items-center space-x-2">
                                 <div className="rounded-full overflow-hidden border-2  border-gray-200">
@@ -48,7 +49,7 @@ export default function About() {
                                 </time>
                             </div>
                         </div>
-                        <div className="space-y-4 ">
+                        <div className="space-y-6 ">
                             <div className="space-y-2">
                                 <p className="text-gray-500 dark:text-gray-400">
                                     Hello! 👋 I'm a 20-year-old enthusiast from
@@ -80,7 +81,20 @@ export default function About() {
                                     where technology and faith intersect. 🚀🎶✨
                                 </p>
                             </div>
-                            <div className="space-y-4">
+                            <div className="space-y-6 ">
+                                <h2 className="text-lg font-semibold">
+                                    Skills
+                                </h2>
+                                <div className="flex flex-wrap gap-2">
+                                    <Badge>REACT JS</Badge>
+                                    <Badge>NEXT JS</Badge>
+                                    <Badge>NODE JS</Badge>
+                                    <Badge>FIREBASE</Badge>
+                                    <Badge>PYTHON</Badge>
+                                    <Badge>JAVA</Badge>
+                                </div>
+                            </div>
+                            <div className="space-y-6">
                                 <h3 className="text-lg font-semibold">
                                     Contact Me
                                 </h3>
@@ -106,20 +120,6 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="flex items-start justify-center">
-                    <div className="grid max-w-sm gap-2">
-                        <Link
-                            className="inline-flex items-center rounded-lg border text-black border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                            href="#">
-                            Follow
-                        </Link>
-                        <Link
-                            className="inline-flex items-center rounded-lg border text-black border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                            href="#">
-                            Message
-                        </Link>
                     </div>
                 </div>
             </div>
