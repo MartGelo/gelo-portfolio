@@ -21,7 +21,8 @@ export default function RootLayout({ children }) {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <body className={inter.className}>
-                    <ParticleBackground /> <Navbar />
+                    <ParticleBackground /> {''}
+                    <Navbar />
                     {children}
                 </body>
             </>

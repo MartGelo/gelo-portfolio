@@ -22,10 +22,10 @@ export const Navbar = (props) => {
     const pathname = usePathname()
 
     return (
-        <Disclosure as="nav" className="w-full bg-gray-900 ">
+        <Disclosure as="nav" className="w-full bg-gray-900 z-10 ">
             {({ open }) => (
                 <>
-                    <div className="container relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-0">
+                    <div className="container relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-0 z-10">
                         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                             <span className="flex items-center space-x-2 text-xl font-medium text-white dark:text-gray-100 hover:text-indigo-500">
                                 @mrtglo
