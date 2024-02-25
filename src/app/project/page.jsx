@@ -25,7 +25,7 @@ export default function Project() {
     }
 
     return (
-        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 max:h-screen border-gray-800 dark:border-gray-800">
+        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 md:h-screen border-gray-800 dark:border-gray-800">
             <main className="grid items-start gap-6 px-4 text-center lg:gap-12 lg:px-6">
                 <div className="mx-auto space-y-2">
                     <h2 className="text-3xl font-bold text-white tracking-tighter sm:text-4xl md:text-5xl">
