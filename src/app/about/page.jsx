@@ -3,8 +3,8 @@ import { Badge } from '@/components/ui/badge'
 
 export default function About() {
     return (
-        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 mx:h-screen border-gray-800 dark:border-gray-800">
-            <div className="container grid item-center text-white lg:grid-cols-[1fr_300px] gap-12 px-4 lg:px-6">
+        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 mx:h-screen border-gray-800 dark:border-gray-800 z-10">
+            <div className="container grid item-center text-white lg:grid-cols-[1fr_300px] gap-12 px-4 lg:px-6 z-10">
                 <div className="space-y-6 lg:space-y-3 xl:space-y-5">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">
