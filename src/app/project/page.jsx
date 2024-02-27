@@ -47,7 +47,7 @@ export default function Project() {
                         <CardContent className="p-4">
                             <img
                                 alt="Image"
-                                className="aspect-video rounded-lg overflow-hidden object-cover object-center transition-transform transform duration-300 ease-in-out hover:scale-105"
+                                className="aspect-video rounded-lg overflow-hidden object-cover object-center"
                                 height="225"
                                 src="/ascot-enrollment.png"
                                 width="400"
@@ -153,7 +153,7 @@ export default function Project() {
                         <CardContent className="p-4">
                             <img
                                 alt="Image"
-                                className="aspect-video rounded-lg overflow-hidden object-cover object-center transition-transform transform duration-300 ease-in-out hover:scale-105"
+                                className="aspect-video rounded-lg overflow-hidden object-cover object-center "
                                 height="225"
                                 src="/coming-soon.jpg"
                                 width="400"
@@ -252,7 +252,7 @@ export default function Project() {
                         <CardContent className="p-4 group">
                             <img
                                 alt="Image"
-                                className="aspect-video rounded-lg overflow-hidden object-cover object-center transition-transform transform duration-300 ease-in-out hover:scale-105"
+                                className="aspect-video rounded-lg overflow-hidden object-cover object-center"
                                 height="225"
                                 src="/coming-soon.jpg"
                                 width="400"
