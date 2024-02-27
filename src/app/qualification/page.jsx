@@ -3,6 +3,10 @@ import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa6'
+import { SiGmail } from 'react-icons/si'
+import Contact from '../contact/page'
 
 export default function Qualification() {
     return (
@@ -27,19 +31,33 @@ export default function Qualification() {
                         </div>
                         <div className="flex flex-col gap-1 min:flex-row">
                             <Link
-                                className="inline-flex h-8 items-center rounded-lg bg-gray-100 px-3 text-sm dark:bg-gray-800"
-                                href="#">
+                                className="inline-flex h-8 items-center rounded-lg px-3 text-sm bg-indigo-500   text-white   hover:bg-indigo-700 focus:bg-indigo-700"
+                                target="blank"
+                                href="https://www.linkedin.com/in/mart-angelo-martinez-538575258/">
+                                <FaLinkedin
+                                    className="mr-2"
+                                    style={{ fill: '#FFCA28' }}
+                                />
                                 LinkedIn
                             </Link>
                             <Link
-                                className="inline-flex h-8 items-center rounded-lg bg-gray-100 px-3 text-sm dark:bg-gray-800"
-                                href="#">
-                                GitHub
+                                className="inline-flex h-8 items-center rounded-lg px-3 text-sm bg-indigo-500   text-white   hover:bg-indigo-700 focus:bg-indigo-700"
+                                target="blank"
+                                href="https://github.com/MartGelo">
+                                <FaGithub
+                                    className="mr-2"
+                                    style={{ color: '#181717' }}
+                                />
+                                Github
                             </Link>
                             <Link
-                                className="inline-flex h-8 items-center rounded-lg bg-gray-100 px-3 text-sm dark:bg-gray-800"
-                                href="#">
-                                Twitter
+                                className="inline-flex h-8 items-center rounded-lg px-3 text-sm bg-indigo-500 text-white hover:bg-indigo-700 focus:bg-indigo-700"
+                                href="mailto:martangelomartinez@gmail.com">
+                                <SiGmail
+                                    className="mr-2"
+                                    style={{ color: '#DB4437' }}
+                                />
+                                Contact Me
                             </Link>
                         </div>
                     </div>
@@ -52,10 +70,10 @@ export default function Qualification() {
                             College
                         </div>
                         <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                            High School
+                            Senior High School
                         </div>
                         <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                            Middle School
+                            High School
                         </div>
                         <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                             Elementary School
@@ -180,50 +198,7 @@ export default function Qualification() {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-800 py-12 lg:py-24">
-                <div className="container grid max-w-6xl px-4 items-start gap-4 md:grid-cols-2 lg:px-6 lg:gap-8">
-                    <div className="space-y-2 text-center md:space-y-4 md:text-left">
-                        <h2 className="text-3xl text-white font-bold tracking-tighter lg:text-5xl xl:text-6xl">
-                            Get in Touch
-                        </h2>
-                        <p className="text-gray-500 dark:text-gray-400">
-                            Have any questions about my educational journey?
-                            Feel free to reach out.
-                        </p>
-                    </div>
-                    <form className="grid gap-4 text-white md:gap-8">
-                        <div className="flex flex-col gap-2">
-                            <Label htmlFor="name">Name</Label>
-                            <Input
-                                className="text-black"
-                                id="name"
-                                placeholder="Enter your name"
-                                required
-                            />
-                        </div>
-                        <div className="flex flex-col text-white gap-2">
-                            <Label htmlFor="email">Email</Label>
-                            <Input
-                                className="text-black"
-                                id="email"
-                                placeholder="Enter your email"
-                                required
-                                type="email"
-                            />
-                        </div>
-                        <div className="flex flex-col text-white gap-2">
-                            <Label htmlFor="message">Message</Label>
-                            <Textarea
-                                className="text-black"
-                                id="message"
-                                placeholder="Enter your message"
-                                required
-                            />
-                        </div>
-                        <Button type="submit"> Submit</Button>
-                    </form>
-                </div>
-            </div>
+            <Contact />
         </>
     )
 }
