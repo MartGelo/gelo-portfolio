@@ -86,9 +86,7 @@ export default function Qualification() {
                                     <h3 className="font-bold text-white">
                                         Aurora State College of Technology
                                     </h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        2021 - Present
-                                    </p>
+                                    <p className="text-sm ">2021 - Present</p>
                                 </div>
                                 <Button
                                     size="sm"
@@ -116,9 +114,7 @@ export default function Qualification() {
                                     <h3 className="font-bold text-white">
                                         Auora State College of Technology
                                     </h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        2019 - 2020
-                                    </p>
+                                    <p className="text-sm ">2019 - 2020</p>
                                 </div>
                                 <Button
                                     size="sm"
@@ -142,9 +138,7 @@ export default function Qualification() {
                                     <h3 className="font-bold text-white">
                                         Diniog National High School
                                     </h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        2014 - 2018
-                                    </p>
+                                    <p className="text-sm ">2014 - 2018</p>
                                 </div>
                                 <Button
                                     size="sm"
@@ -171,9 +165,7 @@ export default function Qualification() {
                                     <h3 className="font-bold text-white">
                                         Diniog Elementary School
                                     </h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        2007 - 2013
-                                    </p>
+                                    <p className="text-sm ">2007 - 2013</p>
                                 </div>
                                 <Button
                                     size="sm"
