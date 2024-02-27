@@ -1,8 +1,15 @@
 'use client'
 import React, { useState } from 'react'
+import Link from 'next/link'
 import { Card, CardHeader, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { FiExternalLink } from 'react-icons/fi'
+import { FiGithub } from 'react-icons/fi'
+import { IoLogoReact } from 'react-icons/io5'
+import { SiNextdotjs } from 'react-icons/si'
+import { IoLogoFirebase } from 'react-icons/io5'
+
+import { FaNode } from 'react-icons/fa'
 
 export default function Project() {
     const [ascotPreviewOpen, setAscotPreviewOpen] = useState(false)
@@ -25,10 +32,10 @@ export default function Project() {
     }
 
     return (
-        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 md:h-screen border-gray-800 dark:border-gray-800">
+        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 md:h-screen border-gray-800 dark:border-gray-800">
             <main className="grid items-start gap-6 px-4 text-center lg:gap-12 lg:px-6">
                 <div className="mx-auto space-y-2">
-                    <h2 className="text-3xl font-bold text-white tracking-tighter sm:text-4xl md:text-5xl">
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                         My Projects
                     </h2>
                     <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -40,7 +47,7 @@ export default function Project() {
                         <CardContent className="p-4">
                             <img
                                 alt="Image"
-                                className="aspect-video rounded-lg overflow-hidden object-cover object-center"
+                                className="aspect-video rounded-lg overflow-hidden object-cover object-center transition-transform transform duration-300 ease-in-out hover:scale-105"
                                 height="225"
                                 src="/ascot-enrollment.png"
                                 width="400"
@@ -50,16 +57,48 @@ export default function Project() {
                             <h3 className="text-sm font-semibold">
                                 ASCOT Enrollment System
                             </h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400"></p>
+
                             <div className="space-y-1">
                                 <h2 className="text-lg font-semibold">
                                     Technology
                                 </h2>
                                 <div className="flex flex-wrap items-center justify-center gap-2">
-                                    <Badge>React</Badge>
-                                    <Badge>Next.js</Badge>
-                                    <Badge>Node.js</Badge>
-                                    <Badge>Firebase</Badge>
+                                    <Badge>
+                                        <IoLogoReact
+                                            className="mr-2"
+                                            style={{ fill: '#61DAFB' }}
+                                        />{' '}
+                                        React
+                                    </Badge>
+
+                                    <Badge>
+                                        <SiNextdotjs
+                                            className="mr-2"
+                                            style={{ fill: '#000000' }}
+                                        />{' '}
+                                        Next.js
+                                    </Badge>
+                                    <Badge>
+                                        <FaNode
+                                            className="mr-2"
+                                            style={{ fill: '#8CC84B' }}
+                                        />{' '}
+                                        Node.js
+                                    </Badge>
+                                    <Badge>
+                                        <IoLogoFirebase
+                                            className="mr-2"
+                                            style={{ fill: '#FFCA28' }}
+                                        />{' '}
+                                        Firebase
+                                    </Badge>
+                                    <Link
+                                        href="#"
+                                        target="_blank"
+                                        className="bg-muted text-muted-foreground p-2 rounded-full hover:scale-125"
+                                        aria-label="Click to see the Github Repot">
+                                        <FiGithub />
+                                    </Link>
                                 </div>
                             </div>
                         </CardHeader>
@@ -68,7 +107,7 @@ export default function Project() {
                     {ascotPreviewOpen && (
                         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                             <div className="max-w-md bg-white p-6 rounded-lg">
-                                <h2 className="text-xl font-semibold mb-4">
+                                <h2 className="text-xl text-black font-semibold mb-4">
                                     Project Details
                                 </h2>
                                 <div className="flex justify-end">
@@ -101,6 +140,7 @@ export default function Project() {
                                     platform to manage and handle the enrollment
                                     of ASCOT students efficiently.
                                 </p>
+
                                 <button
                                     className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
                                     onClick={closeAscotPreview}>
@@ -113,7 +153,7 @@ export default function Project() {
                         <CardContent className="p-4">
                             <img
                                 alt="Image"
-                                className="aspect-video rounded-lg overflow-hidden object-cover object-center"
+                                className="aspect-video rounded-lg overflow-hidden object-cover object-center transition-transform transform duration-300 ease-in-out hover:scale-105"
                                 height="225"
                                 src="/coming-soon.jpg"
                                 width="400"
@@ -129,10 +169,42 @@ export default function Project() {
                                     Technology
                                 </h2>
                                 <div className="flex flex-wrap items-center justify-center gap-2">
-                                    <Badge>React</Badge>
-                                    <Badge>Next.js</Badge>
-                                    <Badge>Node.js</Badge>
-                                    <Badge>Firebase</Badge>
+                                    <Badge>
+                                        <IoLogoReact
+                                            className="mr-2"
+                                            style={{ fill: '#61DAFB' }}
+                                        />{' '}
+                                        React
+                                    </Badge>
+
+                                    <Badge>
+                                        <SiNextdotjs
+                                            className="mr-2"
+                                            style={{ fill: '#000000' }}
+                                        />{' '}
+                                        Next.js
+                                    </Badge>
+                                    <Badge>
+                                        <FaNode
+                                            className="mr-2"
+                                            style={{ fill: '#8CC84B' }}
+                                        />{' '}
+                                        Node.js
+                                    </Badge>
+                                    <Badge>
+                                        <IoLogoFirebase
+                                            className="mr-2"
+                                            style={{ fill: '#FFCA28' }}
+                                        />{' '}
+                                        Firebase
+                                    </Badge>
+                                    <Link
+                                        href="#"
+                                        target="_blank"
+                                        className="bg-muted text-muted-foreground p-2 rounded-full hover:scale-125"
+                                        aria-label="Click to see the Github Repot">
+                                        <FiGithub />
+                                    </Link>
                                 </div>
                             </div>
                         </CardHeader>
@@ -150,7 +222,7 @@ export default function Project() {
                                         <FiExternalLink className="text-xl" />
                                     </a>
                                 </div>
-                                <h2 className="text-xl font-semibold mb-4">
+                                <h2 className="text-xl text-black font-semibold mb-4">
                                     Coming Soon Project Details
                                 </h2>
                                 <CardContent className="p-4">
@@ -177,10 +249,10 @@ export default function Project() {
                     )}
 
                     <Card onClick={openComingSoonPreview}>
-                        <CardContent className="p-4">
+                        <CardContent className="p-4 group">
                             <img
                                 alt="Image"
-                                className="aspect-video rounded-lg overflow-hidden object-cover object-center"
+                                className="aspect-video rounded-lg overflow-hidden object-cover object-center transition-transform transform duration-300 ease-in-out hover:scale-105"
                                 height="225"
                                 src="/coming-soon.jpg"
                                 width="400"
@@ -196,10 +268,42 @@ export default function Project() {
                                     Technology
                                 </h2>
                                 <div className="flex flex-wrap items-center justify-center gap-2">
-                                    <Badge>React</Badge>
-                                    <Badge>Next.js</Badge>
-                                    <Badge>Node.js</Badge>
-                                    <Badge>Firebase</Badge>
+                                    <Badge>
+                                        <IoLogoReact
+                                            className="mr-2"
+                                            style={{ fill: '#61DAFB' }}
+                                        />{' '}
+                                        React
+                                    </Badge>
+
+                                    <Badge>
+                                        <SiNextdotjs
+                                            className="mr-2"
+                                            style={{ fill: '#000000' }}
+                                        />{' '}
+                                        Next.js
+                                    </Badge>
+                                    <Badge>
+                                        <FaNode
+                                            className="mr-2"
+                                            style={{ fill: '#8CC84B' }}
+                                        />{' '}
+                                        Node.js
+                                    </Badge>
+                                    <Badge>
+                                        <IoLogoFirebase
+                                            className="mr-2"
+                                            style={{ fill: '#FFCA28' }}
+                                        />{' '}
+                                        Firebase
+                                    </Badge>
+                                    <Link
+                                        href="#"
+                                        target="_blank"
+                                        className="bg-muted text-muted-foreground p-2 rounded-full hover:scale-125"
+                                        aria-label="Click to see the Github Repot">
+                                        <FiGithub />
+                                    </Link>
                                 </div>
                             </div>
                         </CardHeader>
@@ -217,7 +321,7 @@ export default function Project() {
                                         <FiExternalLink className="text-xl" />
                                     </a>
                                 </div>
-                                <h2 className="text-xl font-semibold mb-4">
+                                <h2 className="text-xl text-black font-semibold mb-4">
                                     Coming Soon Project Details
                                 </h2>
                                 <CardContent className="p-4">

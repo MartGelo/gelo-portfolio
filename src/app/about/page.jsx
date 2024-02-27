@@ -1,10 +1,22 @@
-import Link from 'next/link'
-import { Badge } from '@/components/ui/badge'
+import React from 'react'
+import { TfiHtml5 } from 'react-icons/tfi'
+import { IoLogoCss3 } from 'react-icons/io'
+import { IoLogoJavascript } from 'react-icons/io5'
+import { IoLogoReact } from 'react-icons/io5'
+import { SiNextdotjs } from 'react-icons/si'
+import { SiTailwindcss } from 'react-icons/si'
+import { IoLogoFirebase } from 'react-icons/io5'
+import { FaGitAlt } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa6'
+import { TbBrandVscode } from 'react-icons/tb'
+import { IoLogoVercel } from 'react-icons/io5'
+import { FaNpm } from 'react-icons/fa'
+import { FaNode } from 'react-icons/fa'
 
 export default function About() {
     return (
-        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2 bg-gray-800 mx:h-screen border-gray-800 dark:border-gray-800 z-10">
-            <div className="container grid item-center text-white lg:grid-cols-[1fr_300px] gap-12 px-4 lg:px-6 z-10">
+        <div className="w-full py-12 lg:py-24 xl:py-32 border-t-2  mx:h-screen border-gray-800 dark:border-gray-800 z-10">
+            <div className="container grid item-centerlg:grid-cols-[1fr_300px] gap-12 px-4 lg:px-6 z-10">
                 <div className="space-y-6 lg:space-y-3 xl:space-y-5">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">
@@ -34,8 +46,8 @@ export default function About() {
                                     <h3 className="text-xl font-semibold">
                                         Gelo Martinez
                                     </h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        Aspiring Software Engineer
+                                    <p className=" text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
+                                        Junior Software Engineer
                                     </p>
                                 </div>
                             </div>
@@ -81,43 +93,170 @@ export default function About() {
                                     where technology and faith intersect. 🚀🎶✨
                                 </p>
                             </div>
-                            <div className="space-y-6 ">
-                                <h2 className="text-lg font-semibold">
-                                    Skills
-                                </h2>
-                                <div className="flex flex-wrap gap-2">
-                                    <Badge>REACT JS</Badge>
-                                    <Badge>NEXT JS</Badge>
-                                    <Badge>NODE JS</Badge>
-                                    <Badge>FIREBASE</Badge>
-                                    <Badge>PYTHON</Badge>
-                                    <Badge>JAVA</Badge>
-                                </div>
-                            </div>
-                            <div className="space-y-6">
-                                <h3 className="text-lg font-semibold">
-                                    Contact Me
-                                </h3>
-                                <div className="grid grid-cols-2 items-start gap-4 text-sm sm:grid-cols-2">
-                                    <div className="flex items-center space-x-2">
-                                        <MailOpenIcon className="w-4 h-4 text-gray-500" />
-                                        <span className="text-gray-500 dark:text-gray-400">
-                                            Email
-                                        </span>
+                        </div>
+                        <div className="space-y-10 py-12 lg:py-24 xl:py-32 ">
+                            <section className="sm:w-[90%] mx-auto h-full flex flex-col justify-center sm:gap-24 my-10">
+                                <article className="flex flex-col gap-5 px-5">
+                                    <h2 className="text-5xl font-bold text-center pt-4 ">
+                                        Skills
+                                    </h2>
+                                    <div className=" h-5 flex items-center font-semibold sm:text-lg justify-center space-x-3">
+                                        <div>
+                                            <h5 className="tracking-[0.5em] text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl">
+                                                Tech Stack
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <h5 className="tracking-[0.5em] text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl">
+                                                &amp; Design
+                                            </h5>
+                                        </div>
                                     </div>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        martangelomartinez@gmail.com
-                                    </p>
-                                    <div className="flex items-center space-x-2">
-                                        <MapPinIcon className="w-4 h-4 text-gray-500" />
-                                        <span className="text-gray-500 dark:text-gray-400">
-                                            Location
-                                        </span>
+                                    <section className="flex gap-4 flex-wrap justify-center max-w-5xl mx-auto">
+                                        <div className="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <TfiHtml5
+                                                style={{ fill: '#E34F26' }}
+                                            />
+                                            HTML
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <IoLogoCss3
+                                                style={{ fill: '#1572B6' }}
+                                            />
+                                            CSS
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <IoLogoJavascript
+                                                style={{ fill: '#F7DF1E' }}
+                                            />
+                                            JavaScript
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <IoLogoReact
+                                                className="mr-2"
+                                                style={{ fill: '#61DAFB' }}
+                                            />{' '}
+                                            React
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <SiNextdotjs
+                                                className="mr-2"
+                                                style={{ fill: '#000000' }}
+                                            />{' '}
+                                            Next.js
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <FaNode
+                                                className="mr-2"
+                                                style={{ fill: '#8CC84B' }}
+                                            />{' '}
+                                            Node.js
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <SiTailwindcss
+                                                style={{ fill: '#38B2AC' }}
+                                            />
+                                            Tailwind CSS
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            .Net Framework
+                                        </div>
+
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <IoLogoFirebase
+                                                className="mr-2"
+                                                style={{ fill: '#FFCA28' }}
+                                            />{' '}
+                                            Firebase
+                                        </div>
+                                    </section>
+                                    <div
+                                        data-orientation="horizontal"
+                                        role="none"
+                                        class="shrink-0 bg-slate-200 dark:bg-slate-800 h-[1px] w-full max-w-4xl mx-auto"></div>
+                                    <div class="font-semibold flex items-center sm:text-lg justify-center">
+                                        <h5 class="tracking-[0.5em] text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl">
+                                            Tools
+                                        </h5>
                                     </div>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                                        Pob III Baler Aurora Phil 3205
-                                    </p>
+                                    <section class="flex gap-4 flex-wrap justify-center max-w-5xl mx-auto">
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <FaGitAlt
+                                                style={{ color: '#F05032' }}
+                                            />
+                                            Git
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <FaGithub
+                                                style={{ color: '#181717' }}
+                                            />
+                                            Github
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <TbBrandVscode
+                                                style={{ color: '#007ACC' }}
+                                            />
+                                            VS Code
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <FaNpm
+                                                style={{ color: '#CB3837' }}
+                                            />
+                                            Npm
+                                        </div>
+                                        <div class="rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80 flex items-center gap-1">
+                                            <IoLogoVercel
+                                                style={{ color: '#000000' }}
+                                            />
+                                            Vercel
+                                        </div>
+                                    </section>
+                                    <div
+                                        data-orientation="horizontal"
+                                        role="none"
+                                        class="shrink-0 bg-slate-200 dark:bg-slate-800 h-[1px] w-full max-w-md mx-auto"></div>
+                                    <div class="flex items-center font-semibold sm:text-lg justify-center flex-wrap ">
+                                        <h5 class="tracking-[0.5em] text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl">
+                                            Soft Skills
+                                        </h5>
+                                    </div>
+                                    <div class="flex gap-4 flex-wrap justify-center">
+                                        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80">
+                                            Communication
+                                        </div>
+                                        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80">
+                                            Deep Work
+                                        </div>
+                                        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-base font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-gray-100 text-gray-900 hover:bg-gray-200/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/80">
+                                            Time-management
+                                        </div>
+                                    </div>
+                                </article>
+                            </section>
+                        </div>
+                        <div className="space-y-6">
+                            <h3 className="text-lg font-semibold">
+                                Contact Me
+                            </h3>
+                            <div className="grid grid-cols-2 items-start gap-4 text-sm sm:grid-cols-2">
+                                <div className="flex items-center space-x-2">
+                                    <MailOpenIcon className="w-4 h-4 text-gray-500" />
+                                    <span className="text-gray-500 dark:text-gray-400">
+                                        Email
+                                    </span>
                                 </div>
+                                <p className="text-sm text-gray-500 dark:text-gray-400">
+                                    martangelomartinez@gmail.com
+                                </p>
+                                <div className="flex items-center space-x-2">
+                                    <MapPinIcon className="w-4 h-4 text-gray-500" />
+                                    <span className="text-gray-500 dark:text-gray-400">
+                                        Location
+                                    </span>
+                                </div>
+                                <p className="text-sm text-gray-500 dark:text-gray-400">
+                                    Pob III Baler Aurora Phil 3205
+                                </p>
                             </div>
                         </div>
                     </div>

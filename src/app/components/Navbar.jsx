@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import React, { useMemo } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { usePathname } from 'next/navigation'
+import { ThemeToggleBtn } from '../common/ThemeToggleBtn'
 
 export const Navbar = (props) => {
     const isActive = (href) => {
@@ -22,16 +23,17 @@ export const Navbar = (props) => {
     const pathname = usePathname()
 
     return (
-        <Disclosure as="nav" className="w-full bg-gray-900 z-10 ">
+        <Disclosure as="nav" className="w-full z-10">
             {({ open }) => (
                 <>
                     <div className="container relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-0 z-10">
                         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                            <span className="flex items-center space-x-2 text-xl font-medium text-white dark:text-gray-100 hover:text-indigo-500">
+                            <span className="flex items-center space-x-2 text-xl  text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
                                 @mrtglo
                             </span>
 
                             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                                <ThemeToggleBtn />
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="absolute -inset-0.5" />
@@ -67,7 +69,7 @@ export const Navbar = (props) => {
                                                 key={navigation.name}
                                                 href={navigation.href}
                                                 className={clsx(
-                                                    'hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 text-white',
+                                                    'hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 ',
                                                     {
                                                         'bg-indigo-300 text-white':
                                                             isActive(
@@ -118,4 +120,5 @@ export const Navbar = (props) => {
         </Disclosure>
     )
 }
+
 export default React.memo(Navbar)

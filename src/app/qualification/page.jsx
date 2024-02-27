@@ -7,7 +7,7 @@ import { Textarea } from '@/components/ui/textarea'
 export default function Qualification() {
     return (
         <>
-            <div className="bg-gray-800 py-12 w-full">
+            <div className="bg-gray-800 py-12 w-full  border-gray-800 dark:border-gray-800 ">
                 <div className="container grid max-w-6xl px-4 items-start gap-4 md:grid-cols-2 lg:px-6 lg:gap-8">
                     <div className="space-y-2 text-center md:space-y-4 md:text-left">
                         <h1 className="text-4xl text-white font-bold tracking-tighter lg:text-5xl xl:text-6xl">
@@ -72,7 +72,10 @@ export default function Qualification() {
                                         2021 - Present
                                     </p>
                                 </div>
-                                <Button size="sm" variant="outline">
+                                <Button
+                                    size="sm"
+                                    className="bg-indigo-500 items-center justify-center text-white px-4 py-2 rounded hover:bg-indigo-700 focus:bg-indigo-700">
+                                    {' '}
                                     More Details
                                 </Button>
                             </div>
@@ -99,7 +102,9 @@ export default function Qualification() {
                                         2019 - 2020
                                     </p>
                                 </div>
-                                <Button size="sm" variant="outline">
+                                <Button
+                                    size="sm"
+                                    className="bg-indigo-500 items-center justify-center text-white px-4 py-2 rounded hover:bg-indigo-700 focus:bg-indigo-700">
                                     More Details
                                 </Button>
                             </div>
@@ -123,7 +128,9 @@ export default function Qualification() {
                                         2014 - 2018
                                     </p>
                                 </div>
-                                <Button size="sm" variant="outline">
+                                <Button
+                                    size="sm"
+                                    className="bg-indigo-500 items-center justify-center text-white px-4 py-2 rounded hover:bg-indigo-700 focus:bg-indigo-700">
                                     More Details
                                 </Button>
                             </div>
@@ -150,7 +157,9 @@ export default function Qualification() {
                                         2007 - 2013
                                     </p>
                                 </div>
-                                <Button size="sm" variant="outline">
+                                <Button
+                                    size="sm"
+                                    className="bg-indigo-500 items-center justify-center text-white px-4 py-2 rounded hover:bg-indigo-700 focus:bg-indigo-700">
                                     More Details
                                 </Button>
                             </div>
@@ -211,7 +220,7 @@ export default function Qualification() {
                                 required
                             />
                         </div>
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit"> Submit</Button>
                     </form>
                 </div>
             </div>
