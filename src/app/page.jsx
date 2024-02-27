@@ -1,4 +1,5 @@
 import React from 'react'
+import { HiOutlineDownload } from 'react-icons/hi'
 
 export default function Home() {
     return (
@@ -43,10 +44,18 @@ export default function Home() {
                 <div className="flex flex-wrap items-center justify-center">
                     <a
                         href="/download-cv.pdf"
-                        className=" mr-6 mb-2 lg:mb-0 bg-indigo-500 items-center justify-center text-white px-4 py-2 rounded hover:bg-indigo-700 focus:bg-indigo-700"
+                        className="hidden lg:inline-block mr-6 mb-2 lg:mb-0 bg-indigo-500 items-center justify-center text-white px-4 py-2 rounded hover:bg-indigo-700 focus:bg-indigo-700"
                         target="_blank"
                         download="Mart_Angelo_Martinez_CV.pdf">
                         Download CV
+                    </a>
+
+                    <a
+                        href="/download-cv.pdf"
+                        className="lg:hidden mr-6 mb-2 lg:mb-0 text-indigo-500"
+                        target="_blank"
+                        download="Mart_Angelo_Martinez_CV.pdf">
+                        <HiOutlineDownload />
                     </a>
                     <a
                         href="https://web.facebook.com/martangelo.martinez.1/"
