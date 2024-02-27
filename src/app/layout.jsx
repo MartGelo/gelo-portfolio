@@ -3,6 +3,7 @@ import './globals.css'
 import Head from 'next/head'
 import Navbar from './components/Navbar'
 import ParticleBackground from './components/ParticleBackground'
+import { ThemeProvider } from '@/app/components/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,9 +22,15 @@ export default function RootLayout({ children }) {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <body className={inter.className}>
-                    <ParticleBackground /> {''}
-                    <Navbar />
-                    {children}
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="light"
+                        enableSystem
+                        disableTransitionOnChange>
+                        <ParticleBackground /> {''}
+                        <Navbar />
+                        {children}
+                    </ThemeProvider>
                 </body>
             </>
         </html>
